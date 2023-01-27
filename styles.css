@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background: linear-gradient(to bottom, #81a8d0, #676767);
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+table {
+  overflow: hidden;
+  border-color: #333333;
+  color: #2b2b2b; /*dark blue */
+  width: 80%; /* increase the table width to 80% */
+  border: 1px solid #333333;
+  border-radius: 4px;
+  border-spacing: 0px;
+  background-color: rgba(
+    217,
+    224,
+    231,
+    0.5
+  ); /* set the background color to light greyish blue with 50% opacity */
+}
+
+td {
+  background-color: rgba(
+    217,
+    224,
+    231,
+    0.5
+  ); /* light greyish blue with 50% opacity */
+}
+
+tr:hover {
+  background-color: #f5f5f5; /* light grey */
+}
+
+td,
+th {
+  border-right: 0.5px solid #333333;
+  height: 50px;
+  text-align: center; /* center the content of the cells */
+}
+
+td:last-child {
+  border: 0px;
+}
+
+th:last-child {
+  border: 0px;
+}
+
+/* Set the background color of the form */
+form {
+  background-color: #f2f2f2;
+}
+
+/* Style the label elements */
+label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Style the input elements */
+input[type='text'] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style the submit button */
+input[type='submit'] {
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Add hover effect to the submit button */
+input[type='submit']:hover {
+  background-color: #45a049;
+}
